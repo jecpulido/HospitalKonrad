@@ -1,0 +1,62 @@
+<%= form_with(model: patient, local: true) do |form| %>
+  <% if patient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+
+      <ul>
+      <% patient.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :document %>
+    <%= form.number_field :document %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastName %>
+    <%= form.text_field :lastName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sex %>
+    <%= form.number_field :sex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eps %>
+    <%= form.text_field :eps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.number_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

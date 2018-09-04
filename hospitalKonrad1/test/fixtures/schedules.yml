@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start: 2018-08-31 14:24:12
+  end: 2018-08-31 14:24:12
+  date_schedule: 2018-08-31
+  available: false
+  doctor: one
+
+two:
+  start: 2018-08-31 14:24:12
+  end: 2018-08-31 14:24:12
+  date_schedule: 2018-08-31
+  available: false
+  doctor: two

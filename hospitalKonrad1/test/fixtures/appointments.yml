@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report: MyString
+  room: 1
+  schedule: one
+  patient: one
+  state: one
+
+two:
+  report: MyString
+  room: 1
+  schedule: two
+  patient: two
+  state: two
